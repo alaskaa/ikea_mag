@@ -1,0 +1,114 @@
+body {
+  /*background: skyblue;*/
+}
+
+.grid-container {
+  display: grid;
+  margin: auto;
+  /*max-width: 900px;*/
+  position: relative;
+  grid-template-areas:
+    'header header'
+    'left right'
+    'footer footer';
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto 200px;
+}
+
+.sub-container {
+  display: grid;
+  margin: auto;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+}
+
+.sub-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+h1,
+h2,
+figcaption {
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+}
+
+figure {
+  margin: 15px;
+}
+
+p {
+  font-family: 'Source Code Pro', monospace;
+  text-align: justify;
+  margin: 30px;
+  margin-top: 10px;
+}
+
+.sub-heading {
+  font-size: 12px;
+  margin: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sofa-pic {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  /*background-color: dodgerblue;*/
+  grid-area: header;
+}
+
+.left {
+  /*background-color: dodgerblue;*/
+  grid-area: left;
+}
+
+.right {
+  /*background-color: beige;*/
+  grid-area: right;
+}
+
+footer {
+  /*background-color: dodgerblue;*/
+  grid-area: footer;
+}
+
+@media (max-width: 400px) {
+  img {
+    height: 30%;
+    width: 30%;
+  }
+
+  p {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 550px) {
+  img {
+    height: 30%;
+    width: 30%;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  img {
+    height: 30%;
+    width: 30%;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
